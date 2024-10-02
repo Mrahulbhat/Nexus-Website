@@ -12,6 +12,14 @@
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="../assets/Nexus_logo-removebg-preview.png" alt="Logo" class="logo" />
+            <!-- You can add a loading animation if you want -->
+            <div class="spinner"></div>
+        </div>
+    </div>
     <header>
         <nav>
             <div class="left">
@@ -205,6 +213,17 @@
                 appContainer.classList.remove('darkmode');
             }
         });
+        
+    </script>
+    <script>
+           // JavaScript to handle preloader
+           window.addEventListener("load", function () {
+    setTimeout(function() {
+        const preloader = document.getElementById('preloader');
+        preloader.style.display = 'none';
+        document.body.classList.add('show-content');
+    }, 2000); // Delay of 2 seconds to see the preloader in action
+});
     </script>
 
     <!-- Bootstrap JS -->
