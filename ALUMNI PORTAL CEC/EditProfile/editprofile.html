@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="./editprofile.css">
+    <link rel="icon" type="image/x-icon" href="../assets/NexusFavicon.png">
+    <script src="https://kit.fontawesome.com/feaa59adcb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="left">
+            <div class="menu" id="menuBtn" onclick="toggleSidebar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <h3>CEC NEXUS</h3>
+            </div>
+        </div>
+        <div class="nav-ele">
+            <ul>
+                <li>Alumni Details</li>
+                <li>Announcements and Events</li>
+                <li class="dropdown">
+                    Alumni Assist <i class="fa fa-angle-down"></i>
+                    <ul class="dropdown-content">
+                        <li>Campus Visit</li>
+                        <li>Alumni Talk</li>
+                        <li>Query</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Careers <i class="fa fa-angle-down"></i>
+                    <ul class="dropdown-content">
+                        <li>Internship</li>
+                        <li>Job</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Alumni Coordinators <i class="fa fa-angle-down"></i>
+                    <ul class="dropdown-content">
+                        <li>Faculty Coordinators</li>
+                        <li>Student Coordinators</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <!-- <button class="close-btn" onclick="toggleSidebar()">X</button> -->
+    <div class="profile-section">
+        <div class="profile">
+            <img src="../assets/newLogo.png" alt="Profile" class="profile-icon" />
+            <div class="profile-texts">
+                <h3>Anshu</h3>
+                <p>anshushetty2003@gmail.com</p>
+            </div>
+        </div>
+        <button onclick="">Edit Profile</button>
+        <button><a href="/login" class="logout-link">Sign Out</a></button>
+    </div>
+    <!-- <div class="darkmode-section">
+        <label>
+            <input type="checkbox" id="darkmode-toggle">
+            <i class="fa-solid fa-moon"></i> Dark Mode
+        </label>
+    </div> -->
+</div>
+    <!-- add nav using backend @rakshan -->
+    <div class="edit-profile-container">
+        <div class="profile-display">
+            <img src="../assets/newLogo.png" alt="Profile" />
+            <div class="profile-text">
+                <h2>Student</h2>
+                <p>studnet@gmail.com</p>
+                <p>Canara Engineering College</p>
+                <p>Year: 2021 -2025(backend fetch)</p>
+            </div>
+        </div>
+        
+    <div class="edit-profile">
+      <h2>Edit Profile</h2>
+      <form >
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text" value="name" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" value="email"/>
+        </div>
+        <div>
+            <label for="linkedin">Add Linkedin Adderess</label>
+            <input type="text" name="linkedin" id="linkedin">
+        </div>
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>About Us</h5>
+            <p>CEC NEXUS is the Alumni Connect Portal.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <ul>
+              <li>Address: Benjanapadavu Bantwal Taluk</li>
+              <li>Phone: (123) 456-7890</li>
+              <li>Email: canaraengineering@gmail.com</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Us</h5>
+            <ul class="social-icons">
+              <li><a href="https://www.facebook.com/yourwebsite"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="https://www.twitter.com/yourwebsite"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/yourwebsite"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/yourwebsite"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2024 CEC NEXUS</p>
+    </footer>
+    <script>
+      // Toggle the sidebar visibility
+      function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('main-content');
+            sidebar.classList.toggle('open');
+            mainContent.classList.toggle('shifted'); // Shift the main content when sidebar is open
+        }
+    </script>
+</body>
+</html>

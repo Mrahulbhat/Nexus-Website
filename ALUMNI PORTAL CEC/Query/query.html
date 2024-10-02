@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Page</title>
+    <link rel="stylesheet" href="query.css">
+    <script src="https://kit.fontawesome.com/feaa59adcb.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../assets/NexusFavicon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <img src="../assets/Nexus_logo-removebg-preview.png" alt="Company Logo">
+        </div>
+        <div class="right-panel">
+            <h2>Submit Your Query</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <label for="dept">Department</label>
+                <input type="text" id="dept" name="dept" placeholder="Your department" required>
+
+                <label for="sem">Semester</label>
+                <input type="number" id="sem" name="sem" placeholder="Your semester" required>
+
+                <label for="query">Query</label>
+                <textarea id="query" name="query" placeholder="Write your query here..." required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

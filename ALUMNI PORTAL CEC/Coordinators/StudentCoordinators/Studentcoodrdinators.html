@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Directory</title>
+    <script src="https://kit.fontawesome.com/feaa59adcb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="student.css">
+    <link rel="icon" type="image/x-icon" href="../../assets/Frame 14.png">
+
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="left">
+            <div class="menu" id="menuBtn" onclick="toggleSidebar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <!-- <h3>CEC NEXUS</h3> -->
+                 <img src="../../assets/Nexus_logo-removebg-preview.png" alt="Logo">
+            </div>
+        </div>
+        <div class="nav-ele">
+            <ul>
+                <li>Alumni Details</li>
+                <li>Job Postings</li>
+                <li>Announcements and Events</li>
+                <li class="dropdown">
+                    Careers <i class="fa fa-angle-down"></i>
+                    <ul class="dropdown-content">
+                        <li>Internship</li>
+                        <li>Job</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Alumni Coordinators <i class="fa fa-angle-down"></i>
+                    <ul class="dropdown-content">
+                        <li>Faculty Coordinators</li>
+                        <li>Student Coordinators</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    <div class="container">
+        <div class="student">
+            <h1>Student-in-charge for Alumni Relations</h1>
+            <div class="navigation">
+                <a href="/Home/Home.html">Home</a>
+                <a href="#">Student Coordinators</a>
+            </div>
+    </div>
+        <div class="filters">
+            <select id="branch">
+                <option value="">Select Branch</option>
+                <option value="cse">CSE</option>
+                <option value="ece">ECE</option>
+                <!-- Add more options as needed -->
+            </select>
+            <select id="specialization">
+                <option value="">Select Specialization</option>
+                <option value="ai">AI</option>
+                <option value="ml">ML</option>
+                <!-- Add more options as needed -->
+            </select>
+            <input type="text" id="search" placeholder="Search...">
+        </div>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Specialization - Branch - Programme name</th>
+                        <th>Student-in-charge</th>
+                        <th>Email id</th>
+                        <th>Mobile No</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>ME/M.Tech - Chemical Engineering - M.Tech(Chemical Plant Design)</td>
+                        <td>Dr. B. Ashraf Ali</td>
+                        <td>ashrafmchem@gmail.com</td>
+                        <td>8867171882</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>ME/M.Tech - Chemical Engineering - M.Tech(Chemical Plant Design)</td>
+                        <td>Dr. B. Ashraf Ali</td>
+                        <td>ashrafmchem@gmail.com</td>
+                        <td>8867171882</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>ME/M.Tech - Chemical Engineering - M.Tech(Chemical Plant Design)</td>
+                        <td>Dr. B. Ashraf Ali</td>
+                        <td>ashrafmchem@gmail.com</td>
+                        <td>8867171882</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>ME/M.Tech - Chemical Engineering - M.Tech(Chemical Plant Design)</td>
+                        <td>Dr. B. Ashraf Ali</td>
+                        <td>ashrafmchem@gmail.com</td>
+                        <td>8867171882</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>ME/M.Tech - Chemical Engineering - M.Tech(Chemical Plant Design)</td>
+                        <td>Dr. B. Ashraf Ali</td>
+                        <td>ashrafmchem@gmail.com</td>
+                        <td>8867171882</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>ME/M.Tech - Chemical Engineering - M.Tech(Chemical Plant Design)</td>
+                        <td>Dr. B. Ashraf Ali</td>
+                        <td>ashrafmchem@gmail.com</td>
+                        <td>8867171882</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h5>About Us</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-md-4">
+              <h5>Contact Us</h5>
+              <ul>
+                <li>Address: 123 Main Street, City, State</li>
+                <li>Phone: (123) 456-7890</li>
+                <li>Email: info@yourwebsite.com</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5>Follow Us</h5>
+              <ul class="social-icons">
+                <li><a href="https://www.facebook.com/yourwebsite"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com/yourwebsite"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/yourwebsite"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/yourwebsite"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">&copy; 2023 Your Website Name</p>
+      </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

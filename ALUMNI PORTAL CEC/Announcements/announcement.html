@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News and Announcements</title>
+    <link rel="stylesheet" href="announcemt.css">
+    <link rel="icon" type="image/x-icon" href="../assets/NexusFavicon.png">
+    <script src="https://kit.fontawesome.com/feaa59adcb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <div class="menu" id="menuBtn" onclick="toggleSidebar()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <h3>CEC NEXUS</h3>
+                </div>
+            </div>
+            <div class="nav-ele">
+                <ul>
+                    <li>Alumni Details</li>
+                    <li>Announcements and Events</li>
+                    <li class="dropdown">
+                        Alumni Assist <i class="fa fa-angle-down"></i>
+                        <ul class="dropdown-content">
+                            <li>Campus Visit</li>
+                            <li>Alumni Talk</li>
+                            <li>Query</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        Careers <i class="fa fa-angle-down"></i>
+                        <ul class="dropdown-content">
+                            <li>Internship</li>
+                            <li>Job</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        Alumni Coordinators <i class="fa fa-angle-down"></i>
+                        <ul class="dropdown-content">
+                            <li>Faculty Coordinators</li>
+                            <li>Student Coordinators</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <!-- <button class="close-btn" onclick="toggleSidebar()">X</button> -->
+        <div class="profile-section">
+            <div class="profile">
+                <img src="../assets/newLogo.png" alt="Profile" class="profile-icon" />
+                <div class="profile-texts">
+                    <h3>Anshu</h3>
+                    <p>anshushetty2003@gmail.com</p>
+                </div>
+            </div>
+            <button onclick="">Edit Profile</button>
+            <button><a href="/login" class="logout-link">Sign Out</a></button>
+        </div>
+        <div class="darkmode-section">
+            <label>
+                <input type="checkbox" id="darkmode-toggle">
+                <i class="fa-solid fa-moon"></i> Dark Mode
+            </label>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>News and Announcements</h2>
+
+        <div class="card">
+            <p>1. Thanks to Shri. Umesh Rao Kondeppady, 1983 Batch for your contribution to the institute.</p>
+        </div>
+
+        <div class="card">
+            <p>2. Thanks to Ms. Lavanya G, 2019 Batch for your contribution to the institute.</p>
+        </div>
+
+        <div class="card">
+            <p>3. Thanks to Shri. Pradeep Kumar L, 1997 Batch for your contribution to the institute.</p>
+        </div>
+
+        <div class="card">
+            <p>4. Thanks to Shri. Manish Garg, 2003 Batch for your contribution to the institute.</p>
+        </div>
+
+        <div class="card">
+            <p>5. Thanks to Shri. Purushotham R Bhat, 1984 Batch for your contribution to the institute.</p>
+        </div>
+    </div>
+    <script>
+        // Toggle the sidebar visibility
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('main-content');
+            sidebar.classList.toggle('open');
+            mainContent.classList.toggle('shifted'); // Shift the main content when sidebar is open
+        }
+    </script>
+</body>
+</html>

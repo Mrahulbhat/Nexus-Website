@@ -1,0 +1,114 @@
+/* EditProfile.css */
+@import url(../Home/home.css);
+.edit-profile-container {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: center; 
+  max-width: 800px; 
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.profile-display {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  position: relative; /* Make profile container relative */
+}
+
+.profile-display img {
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%; 
+  margin-bottom: 15px;
+  position: relative; /* Ensure image is the main element */
+  transition: opacity 0.3s ease;
+}
+
+.profile-text {
+  text-align: center;
+}
+
+.profile-text h2 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.profile-text p {
+  margin-bottom: 5px;
+  color: #888;
+}
+
+/* Hover effect for the edit pen icon */
+.profile-display:hover img {
+  opacity: 0.3; /* Dim the image on hover */
+}
+
+/* Add edit icon using a pseudo-element */
+.profile-display::after {
+  content: "\f044"; /* Font Awesome icon for 'pen' (Unicode for 'fa-pen') */
+  font-family: 'Font Awesome 5 Free'; /* Make sure you are using Font Awesome */
+  font-weight: 900; /* Icon weight */
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px; /* Adjust icon size */
+  color: #292929; /* White color for the pen */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.profile-display:hover::after {
+  opacity: 1; /* Show the icon on hover */
+}
+
+.edit-profile {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.edit-profile h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.edit-profile form div {
+  margin-bottom: 10px;
+}
+
+.edit-profile form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.edit-profile form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.edit-profile form button {
+  background-color: #094d9b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.edit-profile form button:hover {
+  background-color: #063a75;
+}
