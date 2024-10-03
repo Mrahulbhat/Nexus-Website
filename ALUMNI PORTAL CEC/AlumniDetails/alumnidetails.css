@@ -1,0 +1,75 @@
+/* Container for the alumni details */
+.alumni-details h1{
+    text-align: center;
+    color: #007bff;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.alumniperson {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 20px auto;
+    /* max-width: 800px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile image */
+.profile-image img {
+    border-radius: 50%;
+    width: 100px; /* Adjust size according to your preference */
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Profile information */
+.profile-info h2 {
+    color: #d00000; /* Title in red */
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.profile-info ul li {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.profile-info ul li a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+.profile-info ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .alumni-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-image {
+        margin-bottom: 15px;
+    }
+
+    .profile-image img {
+        width: 80px;
+        height: 80px;
+    }
+}

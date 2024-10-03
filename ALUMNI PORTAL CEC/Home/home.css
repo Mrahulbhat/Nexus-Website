@@ -69,7 +69,7 @@ nav {
   display: none; /* Hide by default */
   position: absolute;
   background-color: #004080;
-  min-width: 140px;
+  min-width: 160px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -349,11 +349,11 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(https://static.vecteezy.com/system/resources/previews/002/923/747/large_2x/global-network-connection-world-map-point-and-line-composition-concept-of-global-business-illustration-free-vector.jpg);
+  /* background-image: url(https://static.vecteezy.com/system/resources/previews/002/923/747/large_2x/global-network-connection-world-map-point-and-line-composition-concept-of-global-business-illustration-free-vector.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; */
   background-color: #002c50; /* Background color of preloader */
   display: flex;
   justify-content: center;
@@ -361,16 +361,16 @@ nav {
   z-index: 9999; /* Ensure it stays on top of everything */
 }
 
-#preloader::before {
+/* #preloader::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.762); /* Dim the background image */
+  background-color: rgba(0, 0, 0, 0.762); 
   z-index: -1;
-}
+} */
 /* Logo styling */
 .loader .logo {
   width: 200px; /* Adjust size as needed */
