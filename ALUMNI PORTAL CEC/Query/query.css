@@ -84,3 +84,29 @@ form button {
 form button:hover {
     background-color: #003366;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-panel{
+        padding: 0;
+    }
+
+    .left-panel img {
+        margin-top: 15rem;
+        width: 200px;
+        /* height: auto; */
+        border-radius: 10px;
+    }
+
+    .right-panel {
+        padding: 20px;
+    }
+
+    .left-panel {
+        padding: 10px;
+    }
+}
