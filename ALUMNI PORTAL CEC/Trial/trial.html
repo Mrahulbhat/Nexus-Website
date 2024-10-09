@@ -7,40 +7,51 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader">
-            <img src="../assets/Nexus_logo-removebg-preview.png" alt="Logo" class="logo" />
-            <!-- You can add a loading animation if you want -->
-            <div class="spinner"></div>
-        </div>
-    </div>
-
-    <!-- Your main website content -->
-            <div class="container">
-                <h2>Announcements and News</h2>
-        
-                <div class="card">
-                    <div class="circle-number">
-                        <span>1</span>
-                    </div>
-                    <div class="card-content">
-                        <p>Thanks to Shri. Umesh Rao Kondepaddy, 1983 Batch for your contribution to the institute.</p>
-                    </div>
-                </div>
-        
-                <div class="card">
-                    <div class="circle-number">
-                        <span>2</span>
-                    </div>
-                    <div class="card-content">
-                        <p>Thanks to Shri. Umesh Rao Kondepaddy, 1983 Batch for your contribution to the institute.</p>
-                    </div>
-                </div>
-        
+    <header>
+    <nav>
+        <div class="left">
+            <div class="menu" id="menuBtn" onclick="toggleSidebar()">
+                <i class="fa-solid fa-bars"></i>
             </div>
-        
-    </div>
+            <div class="logo">
+                <img src="../assets/Nexus_logo-removebg-preview.png" alt="nexus logo" class="nav-logo">
+            </div>
+        </div>
+        <div class="nav-ele" id="navEle">
+            <ul>
+                <li>Home</li>
+                <li class="dropdown">
+                    Members <i class="fa fa-angle-down"></i>
+                    <ul class="dropdown-content">
+                        <li>CEC Alumni's</li>
+                        <li>Past Student Council Members</li>
+                    </ul>
+                </li>
+                <li>Announcements & Events</li>
+                <li class="dropdown">
+                    Alumni Assist <i class="fa fa-angle-down"></i>
+                    <ul class="dropdown-content">
+                        <li>Campus Visit</li>
+                        <li>Podcast</li>
+                        <li>Query</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Careers <i class="fa fa-angle-down"></i>
+                    <ul class="dropdown-content">
+                        <li>Internship</li>
+                        <li>Job</li>
+                    </ul>
+                </li>
+                <li>Alumni Coordinators</li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    
+
+   
 
     <script >
         // JavaScript to handle preloader

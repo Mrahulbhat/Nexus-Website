@@ -15,7 +15,7 @@
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader">
-            <img src="../assets/Nexus_logo-removebg-preview.png" alt="Logo" class="logo" />
+            <img src="../assets/Nexus_logo-removebg-preview-1.png" alt="Logo" class="logo" />
             <!-- You can add a loading animation if you want -->
             <div class="spinner"></div>
         </div>
@@ -27,11 +27,11 @@
                     <i class="fa-solid fa-bars"></i>
                 </div>
                 <div class="logo">
-                    <h3>CEC NEXUS</h3>
+                    <!-- <h3>CEC NEXUS</h3> -->
                     <img src="../assets/Nexus_logo-removebg-preview.png" alt="nexus logo" class="nav-logo">
                 </div>
             </div>
-            <div class="nav-ele">
+            <div class="nav-ele" id="navEle">
                 <ul>
                     <li>Home</li>
                     <li class="dropdown">
@@ -42,7 +42,7 @@
                             
                         </ul>
                     </li>
-                    <li>Announcements <br>& Events</li>
+                    <li>Announcements & Events</li>
                     <li class="dropdown">
                         Alumni Assist <i class="fa fa-angle-down"></i>
                         <ul class="dropdown-content">
@@ -61,6 +61,9 @@
                     <li>Alumni Coordinators</li>
                 </ul>
             </div>
+            <div class="nav-menu" id="menuBtn" onclick="togglemenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
     </header>
 
@@ -76,7 +79,7 @@
                         <p>anshushetty2003@gmail.com</p>
                     </div>
                 </div>
-                <button onclick="">Edit Profile</button>
+                <button onclick="">Profile</button>
                 <button><a href="/login" class="logout-link">Sign Out</a></button>
             </div>
             <!-- <div class="darkmode-section">
@@ -100,9 +103,9 @@
                     <div class="carousel-item">
                         <img src="https://images.shiksha.com/mediadata/images/1715752606phpM2A9Yu.jpeg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-item">
+                    <!-- <div class="carousel-item">
                         <img src="https://imscec.canaraengineering.in/canara/upload/techevent/AUDIO%20VISUAL%20SESSION%20ABOUT%20AWARENESS%20ON%20SNAKES1_1613990353IMG-20210220-WA0015.jpg" class="d-block w-100" alt="...">
-                    </div>
+                    </div> -->
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -120,14 +123,14 @@
             <div class="mssg">
             <img src="../assets/doublequote.png" alt="" />
             <p>
-              "I want to express my deepest gratitude to each and every one of you
+              I want to express my deepest gratitude to each and every one of you
               for your hard work and dedication." "Today, I want to talk about the
               importance of kindness and compassion in our community ." "I am
               thrilled to announce that our school has been recognized for its
               outstanding achievements in the field of public health." "I believe
               that every individual has the power to make a positive impact in the
               world." "As we move forward, I encourage you to stay committed to our
-              mission of improving the health and well-being of all people."
+              mission of improving the health and well-being of all people.
             </p>
             </div>
             <h3>--Name</h3>
@@ -268,6 +271,11 @@
         document.body.classList.add('show-content');
     }, 2000); // Delay of 2 seconds to see the preloader in action
 });
+
+function togglemenu() {
+            const navEle = document.getElementById("navEle");
+            navEle.classList.toggle("show");
+        }
     </script>
 
     <!-- Bootstrap JS -->

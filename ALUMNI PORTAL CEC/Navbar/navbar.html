@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <script src="https://kit.fontawesome.com/feaa59adcb.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <div class="menu" id="menuBtn" onclick="toggleSidebar()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="../assets/Nexus_logo-removebg-preview-1.png" alt="nexus logo" class="nav-logo">
+                </div>
+            </div>
+            <div class="nav-ele" id="navEle">
+                <ul>
+                    <li>Home</li>
+                    <li class="dropdown">
+                        Members <i class="fa fa-angle-down"></i>
+                        <ul class="dropdown-content">
+                            <li>CEC Alumni's</li>
+                            <li>Past Student Council Members</li>
+                        </ul>
+                    </li>
+                    <li>Announcements & Events</li>
+                    <li class="dropdown">
+                        Alumni Assist <i class="fa fa-angle-down"></i>
+                        <ul class="dropdown-content">
+                            <li>Campus Visit</li>
+                            <li>Podcast</li>
+                            <li>Query</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        Careers <i class="fa fa-angle-down"></i>
+                        <ul class="dropdown-content">
+                            <li>Internship</li>
+                            <li>Job</li>
+                        </ul>
+                    </li>
+                    <li>Alumni Coordinators</li>
+                </ul>
+            </div>
+            <div class="nav-menu" id="menuBtn" onclick="togglemenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <script>
+        // Toggle the sidebar visibility
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('main-content');
+            sidebar.classList.toggle('open');
+            mainContent.classList.toggle('shifted'); // Shift the main content when sidebar is open
+        }
+        function togglemenu() {
+            const navEle = document.getElementById("navEle");
+            navEle.classList.toggle("show");
+        }
+    </script>
+    
+</body>
+</html>

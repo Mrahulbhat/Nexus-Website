@@ -15,7 +15,7 @@ body {
 header {
   background-color: #004080; /* Dark blue */
   color: white;
-  padding: 10px ;
+  padding: 5px ;
   position: sticky;
   top: 0;
   z-index: 1000; /* Ensure it stays on top of other elements */
@@ -26,13 +26,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 5px;
   width: 100%;
   
-}
-
-.nav-logo{
-  display: none;
 }
 
 .left {
@@ -40,12 +36,21 @@ nav {
   align-items: center;
 }
 
-.logo h3 {
-  margin-left: 10px; /* Adjust spacing between logo and menu button */
+/* .logo h3 {
+  margin-left: 10px; 
+} */
+
+.left .logo img{
+  width: auto;
+  height: 120px;
 }
+
 .menu i {
   cursor: pointer;
   font-size: 20px;
+}
+.nav-menu{
+  display: none;
 }
 .nav-ele ul {
   list-style: none;
@@ -168,7 +173,7 @@ nav {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 8rem;
   color: white;
   padding: 10px;
 }
@@ -253,6 +258,7 @@ nav {
   display: flex; /* Arrange cards horizontally */
   justify-content: space-between; /* Distribute space evenly */
   margin-top: 3rem;
+  display: wrap;
 }
 
 .card {
@@ -283,7 +289,7 @@ nav {
 /* footer */
 /* Footer General Styling */
 .footer {
-  background-color: #181818;
+  background-color: #043162;
   color: white;
   padding: 40px 20px;
   font-size: 14px;
@@ -347,7 +353,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #333;
+  border-top: 1px solid #a7a7a7;
   padding-top: 20px;
   font-size: 12px;
   color: #aaa;
@@ -379,10 +385,11 @@ nav {
   gap: 20px;
 }
 
-.footer-icons .social-icons  a {
+.footer-icons .social-icons  i {
   margin-left: 10px;
-  font-size: 16px;
-  color: #aaa;
+  font-size: 20px;
+  color: #ececec;
+  cursor: pointer;
 }
 
 .footer-bottom .social-icons a:hover {
@@ -474,18 +481,42 @@ nav {
   display: block;
 }
 
+/* mobile width */
 @media screen and (max-width: 768px) {
   nav{
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
+    padding: 0;
+    margin: 0;
   }
-  
+  .left .logo img{
+    width: auto;
+    padding: 0;
+  }
   .nav-ele{
     display: none;
   }
   .left .menu {
-    float: right;
+    display: none;
+  }
+  .nav-menu{
+    display: block;
+  }
+  .mssg img{
+    width: auto;
+    height: 20px;
+  }
+  .deans-text p{
+    font-size: 15px;
+    text-align: justify;
+  }
+  .cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card{
+    margin-bottom: 10px;
   }
   .footer-columns {
     flex-direction: column-reverse;
